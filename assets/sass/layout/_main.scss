@@ -1,4 +1,25 @@
-main {
-    font-family: $old-standard-tt;
-    font-size: 80px;
+/*main*/
+
+//aside
+//callout
+.main-callout {
+    position: relative;
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+//form
+.main-form {
+    position: relative;
+}
+
+//image
+.main-img {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    max-width: 50%;
 }

@@ -4,13 +4,74 @@
 /*Tipography*/
 /*vendors*/
 /*base*/
+/*reset*/
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
 /*layout*/
-main {
-  font-family: "Old Standard TT", serif;
-  font-size: 80px;
+/*main*/
+.main-callout {
+  position: relative;
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.main-form {
+  position: relative;
+}
+
+.main-img {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  max-width: 50%;
 }
 
 /*components*/
+/*navigation*/
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+}
+.navbar-nav .nav-link {
+  padding-right: 5px;
+  padding-left: 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0C0910;
+}
+
+.navbar-brand {
+  background-color: #0C0910;
+  color: #ffffff;
+  padding: 25px;
+  font-family: "Old Standard TT", serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 /*pages*/
 /*themes*/
 

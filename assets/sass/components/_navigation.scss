@@ -1,0 +1,35 @@
+/*navigation*/
+
+//container nav
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+//navbar list
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    .nav-link {
+        padding-right: 5px;
+        padding-left: 5px;
+        font-family: $raleway;
+        font-size: $small;
+        font-weight: $bold;
+        color: $smoky-black;
+    }
+}
+
+//navbar brand
+.navbar-brand {
+    background-color: $smoky-black;
+    color: $white;
+    padding: 25px;
+    font-family: $old-standard-tt;
+    font-size: $x-large;
+    font-weight: $bold;
+}
