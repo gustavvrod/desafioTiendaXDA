@@ -1,0 +1,39 @@
+/*buttons*/
+
+//main-callout_button
+.main-callToAction_container button {
+    padding: 9px;
+    width: 105px;
+    background-color: $white;
+    border-color: $smoky-black;
+    border-style: ridge;
+    font-family: $raleway;
+    font-size: $small;
+    font-weight: $bold;
+    color: $smoky-black;
+    &:hover {
+        border-color: $light-gray;
+        border-style: solid;
+    }
+    &:focus {
+        border-color: $isabelline;
+        border-style: solid;
+        color: $isabelline;
+    }
+}
+
+//suscribe button
+.main-suscribe_button {
+    position: absolute;
+    bottom: 80px;
+    right: -50px;
+    display: flex;
+    float: right;
+    transform: rotate(90deg);
+    background-color: $white;
+    border: none;
+    font-family: $old-standard-tt;
+    font-size: $large;
+    font-weight: $bold;
+    color: $smoky-black;
+}

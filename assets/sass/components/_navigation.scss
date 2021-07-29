@@ -15,8 +15,8 @@
     display: flex;
     list-style: none;
     .nav-link {
-        padding-right: 5px;
-        padding-left: 5px;
+        padding-right: 25px;
+        padding-left: 25px;
         font-family: $raleway;
         font-size: $small;
         font-weight: $bold;
@@ -28,8 +28,9 @@
 .navbar-brand {
     background-color: $smoky-black;
     color: $white;
-    padding: 25px;
     font-family: $old-standard-tt;
     font-size: $x-large;
     font-weight: $bold;
+    padding: 30px 20px;
+    transform: rotate(-90deg);
 }

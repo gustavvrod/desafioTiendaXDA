@@ -1,0 +1,13 @@
+/*input*/
+
+//newsletter input
+input {
+    font-family: $raleway;
+    width: 70%;
+    height: $x-large;
+}
+
+input::placeholder {
+    background-color: $white;
+    color: $smoky-black;
+}

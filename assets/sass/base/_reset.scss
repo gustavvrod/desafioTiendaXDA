@@ -13,3 +13,8 @@ a:focus,
 a:active {
     text-decoration: none;
 }
+
+input,
+label {
+    display: block;
+}

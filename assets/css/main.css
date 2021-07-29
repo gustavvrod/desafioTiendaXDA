@@ -17,29 +17,123 @@ a:active {
   text-decoration: none;
 }
 
-/*layout*/
-/*main*/
-.main-callout {
-  position: relative;
-  width: 100%;
-  max-width: 50%;
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
+input,
+label {
+  display: block;
 }
 
-.main-form {
-  position: relative;
+/*layout*/
+/*main*/
+.main-container {
+  width: 100%;
 }
 
 .main-img {
   position: absolute;
   right: 0;
-  width: 100%;
-  max-width: 50%;
+  width: 56%;
+  min-width: 400px;
+  max-height: 630px;
+}
+
+.main-callToAction {
+  position: relative;
+  width: 45%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-callToAction_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+}
+.main-callToAction_container h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0C0910;
+}
+.main-callToAction_container p {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #646266;
+  padding: 5% 20% 5% 0;
+}
+
+.main-form {
+  position: relative;
+  padding: 10%;
+  background-color: #0C0910;
+}
+.main-form h4 {
+  font-family: "Old Standard TT", serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+.main-form label {
+  font-family: "Old Standard TT", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 /*components*/
+/*buttons*/
+.main-callToAction_container button {
+  padding: 9px;
+  width: 105px;
+  background-color: #ffffff;
+  border-color: #0C0910;
+  border-style: ridge;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0C0910;
+}
+.main-callToAction_container button:hover {
+  border-color: #D1D1D1;
+  border-style: solid;
+}
+.main-callToAction_container button:focus {
+  border-color: #ECECEC;
+  border-style: solid;
+  color: #ECECEC;
+}
+
+.main-suscribe_button {
+  position: absolute;
+  bottom: 80px;
+  right: -50px;
+  display: flex;
+  float: right;
+  transform: rotate(90deg);
+  background-color: #ffffff;
+  border: none;
+  font-family: "Old Standard TT", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0C0910;
+}
+
+/*input*/
+input {
+  font-family: "Raleway", sans-serif;
+  width: 70%;
+  height: 20px;
+}
+
+input::placeholder {
+  background-color: #ffffff;
+  color: #0C0910;
+}
+
 /*navigation*/
 .navbar {
   position: relative;
@@ -55,8 +149,8 @@ a:active {
   list-style: none;
 }
 .navbar-nav .nav-link {
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 25px;
+  padding-left: 25px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -66,10 +160,11 @@ a:active {
 .navbar-brand {
   background-color: #0C0910;
   color: #ffffff;
-  padding: 25px;
   font-family: "Old Standard TT", serif;
   font-size: 20px;
   font-weight: 700;
+  padding: 30px 20px;
+  transform: rotate(-90deg);
 }
 
 /*pages*/
