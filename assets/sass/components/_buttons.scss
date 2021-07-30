@@ -1,7 +1,7 @@
 /*buttons*/
 
 //main-callout_button
-.main-callToAction_container button {
+.main-callToAction__container button {
     padding: 9px;
     width: 105px;
     background-color: $white;
@@ -23,12 +23,10 @@
 }
 
 //suscribe button
-.main-suscribe_button {
+.main-suscribe__button {
     position: absolute;
     bottom: 80px;
     right: -50px;
-    display: flex;
-    float: right;
     transform: rotate(90deg);
     background-color: $white;
     border: none;
@@ -36,4 +34,10 @@
     font-size: $large;
     font-weight: $bold;
     color: $smoky-black;
+    &:hover {
+        color: $quick-silver;
+    }
+    &:focus {
+        color: $isabelline;
+    }
 }

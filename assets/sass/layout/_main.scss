@@ -2,6 +2,7 @@
 
 //main container
 .main-container {
+    position: absolute;
     width: 100%;
 }
 
@@ -9,22 +10,23 @@
 .main-img {
     position: absolute;
     right: 0;
-    width: 56%;
+}
+
+.main-img__container {
     min-width: 400px;
     max-height: 630px;
 }
 
-//callout
+//callToAction
 .main-callToAction {
     position: relative;
-    width: 45%;
-    max-width: 400px;
     display: flex;
     flex-direction: column;
+    padding: 1% 0;
 }
 
-// main-callout_container
-.main-callToAction_container {
+// main-callToAction__container
+.main-callToAction__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,5 +64,116 @@
         font-size: $medium;
         font-weight: $regular;
         color: $white;
+    }
+}
+
+
+/*MEDIA QUERYS */
+
+//calltoaction section set to 1201px min-width for expand content to max 45% avalaible space
+@media only screen and (min-width: 1201px) {
+    //callToAction
+    .main-callToAction {
+        position: relative;
+        width: 45%;
+    }
+}
+
+//media 1200px max-width for expand content side by side
+@media only screen and (max-width: 1200px) {
+    //main container
+    .main-container {
+        position: absolute;
+        width: 100%;
+    }
+    //image
+    .main-img {
+        position: absolute;
+        right: 0;
+        width: 50%;
+    }
+    .main-img__container {
+        max-height: 630px;
+    }
+    //callToAction
+    .main-callToAction {
+        position: relative;
+        width: 45%;
+        min-height: inherit;
+    }
+}
+
+//media 800px max-width to adjust content in column order,picture first
+@media only screen and (max-width: 800px) {
+    //main container
+    .main-container {
+        position: absolute;
+        width: 100%;
+    }
+    //image
+    .main-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    //main-img__container
+    .main-img__container {
+        position: absolute;
+        width: 100%;
+    }
+    //callToAction
+    .main-callToAction {
+        position: relative;
+        width: 100%;
+        top: 630px;
+    }
+    // main-callToAction__container
+    .main-callToAction__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+    }
+    //suscribe button
+    .main-suscribe__button {
+        position: absolute;
+        bottom: 80px;
+        right: 100px;
+    }
+}
+
+//media 630px max-width for adjust calltoaction section to main-img
+@media only screen and (max-width: 630px) {
+    //main-img
+    .main-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    //main-img__container
+    .main-img__container {
+        width: 100%;
+    }
+    //calltoaction
+    .main-callToAction {
+        position: absolute;
+        top: 530px;
+    }
+}
+
+//media 480px max-width for small device 
+@media only screen and (max-width: 480px) {
+    //main-img
+    .main-img {
+        max-width: 400px;
+    }
+    //calltoaction
+    .main-callToAction {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 400px;
     }
 }

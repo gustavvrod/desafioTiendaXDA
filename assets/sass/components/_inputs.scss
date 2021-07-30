@@ -7,6 +7,7 @@ input {
     height: $x-large;
 }
 
+//input placeholder style
 input::placeholder {
     background-color: $white;
     color: $smoky-black;

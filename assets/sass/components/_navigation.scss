@@ -2,25 +2,23 @@
 
 //container nav
 .navbar {
-    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-}
-
-//navbar list
-.navbar-nav {
-    display: flex;
-    list-style: none;
-    .nav-link {
-        padding-right: 25px;
-        padding-left: 25px;
-        font-family: $raleway;
-        font-size: $small;
-        font-weight: $bold;
-        color: $smoky-black;
+    align-items: center;
+    //collapsable button
+    &__collapsable {
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        margin: 0 auto;
+        span {
+            display: block;
+            width: 40px;
+            height: 4px;
+            background: $smoky-black;
+            margin-top: 7px;
+        }
     }
 }
 
@@ -33,4 +31,86 @@
     font-weight: $bold;
     padding: 30px 20px;
     transform: rotate(-90deg);
+}
+
+//input
+#navbar-menu {
+    display: none;
+    //navbar list
+    &__link {
+        display: none;
+        text-align: center;
+        padding: 10px 0;
+        li a {
+            display: block;
+            font-family: $raleway;
+            font-size: $medium;
+            color: $smoky-black;
+            font-weight: $bold;
+            padding: 10px 0;
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+        }
+    }
+    &:checked+#navbar-menu__link {
+        display: block;
+    }
+}
+
+//cursor style
+label {
+    cursor: pointer;
+}
+
+//navbar set to min 480px to expand 
+@media only screen and (min-width: 480px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        //collapsable button
+        &__collapsable {
+            display: none;
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            margin: 0 auto;
+            span {
+                display: block;
+                width: 40px;
+                height: 4px;
+                background: $smoky-black;
+                margin-top: 7px;
+            }
+        }
+    }
+    //navbar brand
+    .navbar-brand {
+        transform: rotate(0deg);
+    }
+    //navbar list
+    #navbar-menu {
+        display: none;
+        &__link {
+            display: flex;
+            flex-direction: row;
+            padding: 10px 0;
+            li a {
+                display: flex;
+                font-family: $raleway;
+                font-size: $medium;
+                color: $smoky-black;
+                font-weight: $bold;
+                padding: 10px 20px;
+                text-decoration: none;
+            }
+            li {
+                list-style: none;
+            }
+        }
+        &:checked+#navbar-menu__link {
+            display: block;
+        }
+    }
 }
